@@ -1,4 +1,4 @@
-# mow.lan : acer c710 chromebook; gently hardened road warrior whom renoise
+# mow.lan : acer c710 chromebook; smol road warrior whom renoise
 
 { config, lib, pkgs, ... }:
 
@@ -55,8 +55,6 @@
 
   # this is blacklisted in something upstream, but is needed for the trackpad
   boot.postBootCommands = "${pkgs.kmod}/sbin/modprobe i2c_i801";
-
-  security.grsecurity.enable = true;
 
   networking = {
     hostName = "mow";
