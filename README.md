@@ -1,12 +1,16 @@
-NixOS configs yeah!
-===================
+# NixOS configs!
 
-To install:
-* move your existing /etc/nixos somewhere else
-* clone this to /etc/nixos
-* move your /etc/somewhereelse/hardware-configuration.nix into /etc/nixos
-* symlink something in machines/ to configuration.nix (or cp & symlink)
+THIS OS IS AMAZING.
 
-Super work-in-progress and probably not entirely usable for anyone but me,
-but posted here 'cos I would not have gotten as far as I have without the
-configs other folx have posted on GitHub. Thanks, y'all.
+## Installation
+
+After setting up SSH deploy keys & stuff, do something like the following (as root):
+```
+mv /etc/nixos /tmp
+git clone git@github.com:/mxjessie/nixos-configs.git /etc/nixos
+mv /tmp/nixos/hardware-configuration.git /etc/nixos/
+mv /tmp/nixos/configuration.nix /etc/nixos/hosts/`hostname`.nix
+ln -s /etc/nixos/hosts/`hostname`.nix /etc/nixos/configuration.nix
+rmdir /tmp/nixos
+```
+
