@@ -27,7 +27,6 @@
     pkgs.git
     pkgs.git-hub 
     pkgs.python3
-    pkgs.ponysay # extremely important
     pkgs.pciutils
     pkgs.dmidecode
     pkgs.cpufrequtils
