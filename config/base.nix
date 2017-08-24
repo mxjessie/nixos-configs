@@ -18,19 +18,20 @@
   time.timeZone = "America/Los_Angeles";
 
   environment.systemPackages = with pkgs; [
-    pkgs.vim_configurable
-    pkgs.zsh
-    pkgs.nix-repl
-    pkgs.wget 
+    pkgs.binutils
+    pkgs.cpufrequtils
     pkgs.curl 
-    pkgs.rsync 
+    pkgs.gptfdisk
+    pkgs.dmidecode
     pkgs.git
     pkgs.git-hub 
-    pkgs.python3
+    pkgs.nix-repl
     pkgs.pciutils
-    pkgs.dmidecode
-    pkgs.cpufrequtils
-    pkgs.binutils
+    pkgs.python3
+    pkgs.rsync 
+    pkgs.vim_configurable
+    pkgs.wget 
+    pkgs.zsh
   ];
 
   networking.firewall = {
