@@ -25,6 +25,7 @@
     pkgs.dmidecode
     pkgs.git
     pkgs.git-hub 
+    pkgs.mosh
     pkgs.nix-repl
     pkgs.pciutils
     pkgs.python3
