@@ -23,5 +23,10 @@
     domain = "lan";
   };
 
+  services.cron.enable = true;
+
+  # run a zpool scrub every sunday at 9 am
+  services.cron.systemCronJobs = [ "0 9 * * 0 zpool scrub flop"];
+
   system.stateVersion = "17.03";
 }
