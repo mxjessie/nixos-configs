@@ -6,6 +6,7 @@
   imports = [
     ../config/base.nix
     ../config/users.nix
+    ../config/nas.nix
   ];
 
   boot = {
