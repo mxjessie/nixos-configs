@@ -6,8 +6,10 @@
   networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
-    pkgs.lightdm
+    pkgs.font-awesome-ttf
     pkgs.firefox
+    pkgs.lightdm
+    pkgs.powerline-fonts
     pkgs.redshift
     pkgs.xorg.xbacklight
   ];
@@ -23,6 +25,7 @@
     enableGhostscriptFonts = true;
     fonts = with pkgs; [
       fira-code
+      font-awesome
       inconsolata
       powerline-fonts
       terminus_font
