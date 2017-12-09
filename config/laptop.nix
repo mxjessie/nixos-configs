@@ -3,6 +3,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ../config/hwmgmt.nix
+  ];
+
   environment.systemPackages = with pkgs; [
     pkgs.powertop
     pkgs.acpi

@@ -3,13 +3,14 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [
-      ../config/base.nix
-      ../config/laptop.nix
-      ../config/xorg.nix
-      ../config/xorg/i3.nix
-    ];
+  imports = [
+    ../config/base.nix
+    ../config/bootsplash.nix
+    ../config/laptop.nix
+    ../config/scm.nix
+    ../config/xorg.nix
+    ../config/xorg/i3.nix
+  ];
 
   boot.initrd.luks.devices.crypted.device = "/dev/sda2";
 

@@ -19,16 +19,23 @@
 
   environment.systemPackages = with pkgs; [
     pkgs.binutils
-    pkgs.cpufrequtils
     pkgs.curl 
     pkgs.dmidecode
+    pkgs.dnsutils
     pkgs.git
     pkgs.git-hub 
+    pkgs.moreutils
+    pkgs.mosh
+    pkgs.mtr
+    pkgs.nettools
     pkgs.nix-repl
+    pkgs.nmap
     pkgs.pciutils
-    pkgs.python3
+    pkgs.python27Packages.powerline
+    pkgs.python36Packages.powerline
     pkgs.rsync 
     pkgs.screen
+    pkgs.strace
     pkgs.tmux
     pkgs.vim_configurable
     pkgs.wget 
