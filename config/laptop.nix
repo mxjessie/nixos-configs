@@ -3,7 +3,6 @@
 { config, pkgs, ... }:
 
 {
-
   environment.systemPackages = with pkgs; [
     pkgs.powertop
     pkgs.acpi
@@ -11,5 +10,4 @@
   ];
 
   services.upower.enable = true;
-
 }

@@ -6,9 +6,9 @@
   imports = [
       ../config/base.nix
       ../config/laptop.nix
-      ../config/gui.nix
-      ../config/xfce.nix
       ../config/studio.nix
+      ../config/xorg.nix
+      ../config/xorg/xfce.nix
     ];
 
   nixpkgs.config.allowUnfree = true;
