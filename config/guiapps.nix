@@ -2,15 +2,14 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    pkgs.byzanz
-    pkgs.claws-mail
-    pkgs.chromium
+    pkgs.claws-mail # what if: notmuch / offlineimap / ??
+    pkgs.discord # unfree
     pkgs.firefox
-    pkgs.firefox-esr
+    pkgs.gnome3.vinagre
     pkgs.keepassx
     pkgs.mpv
     pkgs.rss-glx
-    pkgs.vinagre
+    pkgs.tdesktop
     pkgs.wireshark
     pkgs.xpdf
   ];

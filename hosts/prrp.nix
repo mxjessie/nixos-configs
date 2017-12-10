@@ -6,8 +6,10 @@
   imports = [
     ../config/base.nix
     ../config/bootsplash.nix
+    ../config/devel.nix
+    ../config/guiapps.nix
     ../config/laptop.nix
-    ../config/scm.nix
+    #../config/rust-nightly-overlay.nix
     ../config/xorg.nix
     ../config/xorg/i3.nix
   ];
@@ -25,6 +27,8 @@
     domain = "lan";
     #wireless.enable = true;
   };
+
+  nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "17.09";
 

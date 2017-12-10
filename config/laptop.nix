@@ -1,7 +1,5 @@
 # laptop.nix: basic laptop config, power management, etc
-
 { config, pkgs, ... }:
-
 {
   imports = [
     ../config/hwmgmt.nix
