@@ -1,4 +1,5 @@
 # grsec.nix: NIXOS used HARDEN! NIXOS's DEFENSE ROSE!
+# DEPRECATED: NIXOS forgot how to use HARDEN!
 
 { config, lib, pkgs, ... }:
 

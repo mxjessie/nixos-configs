@@ -4,11 +4,13 @@
 
 {
   environment.systemPackages = with pkgs; [
-    pkgs.i3
-    pkgs.i3status
-    pkgs.i3lock-fancy
-    pkgs.xautolock
     pkgs.dmenu
+    pkgs.dunst
+    pkgs.i3
+    pkgs.i3lock-fancy
+    pkgs.i3status
+    pkgs.libnotify
+    pkgs.xautolock
   ];
 
   services.xserver = {

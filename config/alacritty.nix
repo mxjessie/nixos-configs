@@ -1,4 +1,4 @@
-# alacritty.nix: instal that terminal emulator i like. you know the one
+# alacritty.nix: install that terminal emulator i like. you know the one
 
 { config, pkgs, ... }:
 

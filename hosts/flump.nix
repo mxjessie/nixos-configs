@@ -1,4 +1,5 @@
 # flump.lan : new personal fileserver for media backuppery
+# i pretty much dumped this for debian for reasons i don't remember. o wel
 
 { config, lib, pkgs, ... }:
 

@@ -1,4 +1,4 @@
-# mow.lan : acer c710 chromebook; smol road warrior whom renoise
+# mow.lan : acer c710 chromebook; smol road warrior whom cannae renoise bc wtf
 
 { config, lib, pkgs, ... }:
 

@@ -19,6 +19,13 @@
     enable = true;
     layout = "us";
     displayManager.lightdm.enable = true;
+    synaptics = {
+      enable = true;
+      twoFingerScroll = true;
+      horizTwoFingerScroll = true;
+      # what does this do?
+      fingersMap = [1 3 2];
+    };
   };
 
   fonts = {
